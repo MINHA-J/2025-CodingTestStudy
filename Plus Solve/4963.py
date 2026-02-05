@@ -2,6 +2,9 @@
 
 # 1은 땅, 0은 바다
 
+import sys
+sys.setrecursionlimit(900000)
+
 # 상 하 좌 우 
 # 오위, 왼위, 오아, 왼아
 dx = [0, 0, +1, -1, -1, +1, -1, +1]
@@ -48,5 +51,5 @@ while True:
                 dfs(j, i)
                 answer += 1
 
-    print("정답: "+ answer)
+    print(answer)
 
